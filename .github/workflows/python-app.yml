@@ -28,7 +28,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Install and Run Appium Server
       run: |
-        chmod +x ./scripts/RunAppiumServer.sh # install and run appium server in the background
+        chmod +x ./RunAppiumServer.sh # install and run appium server in the background
         ./RunAppiumServer.sh
     - name: Test with pytest
       run: |

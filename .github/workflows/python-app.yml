@@ -32,4 +32,4 @@ jobs:
         ./RunAppiumServer.sh
     - name: Test with pytest
       run: |
-        pytest
+        python HelloAppium.py

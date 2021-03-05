@@ -49,6 +49,7 @@ class TestCalculator(unittest.TestCase):
 
     #test number 0
     def test_01(self):
+        print('test01')
         self.driver.find_element_by_id('com.android.calculator2:id/digit_0').click()
         self.assertEqual('0', self.driver.find_element_by_id('com.android.calculator2:id/formula').text)
 
